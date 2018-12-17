@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let status of statuses">
+    <h3>
+      {{ status.name }} <button ng-click="search.next({criterioName: status.name, criterioValue: status.id})">Buscar</button>
+    </h3>
+    <!--[routerLink]="[relativePath, status.id]">-->
+  </li>
+</ul>
